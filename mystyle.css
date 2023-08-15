@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+
+}
+main{
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    
+}
+.section{
+    width: 100%;
+    max-width: 400px;
+    height: fit-content;
+    border: none;
+    box-shadow: 0 5px 10px 5px rgb(241, 233, 233);
+    margin: 50px auto;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+.hero h1{
+    margin: 5px;
+    padding: 5px;
+    text-transform: capitalize;
+}
+.hero p{
+    margin: 5px;
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 10px;
+}
+.social img{
+    width: 24px;
+    height: 24px;
+
+}
+.social a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bolder;
+    color: #333;
+    display: flex;
+     justify-content: center;
+    align-items: center; 
+    gap: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(243, 228, 228);
+    border-radius: 5px;
+     cursor: pointer;
+    
+}
+.social a:hover{
+    text-decoration: underline;
+    color: blue;
+    border: 1px solid lightblue;
+}
+.divider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:16px;
+    margin: 10px;
+    
+}
+.divider-line{
+    width: 100%;
+    height: 1px;
+    background-color: lightgray;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 5px;
+    position: relative;
+    text-transform: capitalize;
+}
+input{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    font-weight: 500px;
+    border-radius: 5px;
+    cursor: text;
+    z-index: 10;
+    
+
+}
+.text-feild{
+    position: relative;
+    margin: 10px;
+}
+.text-feild img{
+    width: 30px;
+    height: 25px;
+    position: absolute;
+     right: -3px;
+     bottom: -4px;
+    transform: translate(-50%,-50%);
+    transform-origin: center;
+    object-fit: contain;
+}
+
+
+
+button{
+    width: 100%;
+    height: 40px;
+    background-color: blue;
+    border-radius: 5px;
+    border: none;
+    color: whitesmoke;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    padding: 8px;
+    margin-top: 5px;
+}
+.last-line{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.last-line a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #333;
+    font-weight: bold;
+}
+.last-line a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+.create{
+    text-align: center;
+}
+.create a{
+    color: blue;
+    font-weight: bolder;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.create a:hover{
+    text-decoration: underline;
+}
+.side img{
+    width: 100vh;
+    overflow: hidden;
+}
+@media(max-width:400px){
+    main{
+        grid-template-columns: 1fr;
+        height: 100vh;
+    }
+}
